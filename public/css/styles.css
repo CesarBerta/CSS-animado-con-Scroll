@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.body--header {
+    padding: 30px 15px 15px 60px;
+    font-size: 18px;
+    text-align: center;
+    color:white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.body--main {
+    background-color: black;;
+    display: grid;
+    padding-block: 150px;
+    place-content: center;
+    gap: 15px;
+}
+
+/* Start Footer */
+.body--footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px 15px 15px;
+}
+.body__footer--p {
+    text-align: center;
+    color:black;
+    font-size: 15px;
+    font-weight: 430;
+    margin: 6px 15px 15px 15px;
+}
+.body__footer--aLinkedin {
+    text-decoration: none;
+    color:#0A66C2;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 13px 18px;
+    padding: 4px;
+    border-radius: 15px;
+    transition: all 100ms;
+}
+.body__footer--aLinkedin:hover {
+    background-color:rgb(10, 102, 194, 0.15);
+}
+.body__footer--aGithub {
+    text-decoration: none;
+    color:#1F2328;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 13px 18px;
+    padding: 4px;
+    border-radius: 15px;
+    transition: all 100ms;
+}
+.body__footer--aGithub:hover {
+    background-color:rgb(31, 35, 40, 0.15);
+}
+/* End Footer */
+
+/* 1 row image */
+.img__scroll--one {
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 18px;
+    object-fit: cover;
+    transition: all 300ms;
+}
+.img__scroll--one:hover {
+    border: 3px solid lightgrey;
+    box-shadow: 0px 0px 40px rgb(255, 255, 255, 0.6);
+}
+
+/* 2 row images */
+.div--scrollTwo {
+    display: flex;
+    justify-content: center;
+    background-color:lightgrey;
+    width: 60%;
+    padding: 10px 40px;
+    border-radius: 21px;
+    object-fit: cover;
+    transition: all 300ms;
+} 
+.div__scroll--ImageTwo{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color: white;
+    border-radius: 18px;
+    object-fit: cover;
+    transition: all 300ms;
+}
+.div__scroll--ImageTwo:hover {
+    border: 1px solid black;
+    box-shadow: 0px 0px 40px rgb(0, 0, 0, 0.6);
+}
+
+/* 3 row images */
+.div--scrollThree {
+    display: flex;
+    justify-content: center;
+    background-color:lightgrey;
+    width: 60%;
+    padding: 10px 40px;
+    border-radius: 21px;
+    object-fit: cover;
+}
+.div__scroll--ImageThree {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color: white;
+    border-radius: 18px;
+    object-fit: cover;
+    transition: all 300ms;
+}
+.div__scroll--ImageThree:hover {
+    border: 1px solid black;
+    box-shadow: 0px 0px 40px rgb(0, 0, 0, 0.6);
+}
+
+/* animated scroll*/
+.img__scroll--one {
+    view-timeline-name: --reveal;
+    animation-timeline: --reveal;
+    animation-range: entry 10% cover 70%;
+
+    animation-name: appearShow;
+    animation-fill-mode: both;    
+    animation-duration: 1ms;
+}
+.div--scrollTwo {
+    view-timeline-name: --reveal;
+    animation-timeline: --reveal;
+    animation-range: entry 15% cover 60%;
+
+    animation-name: appearShow;
+    animation-fill-mode: both;    
+    animation-duration: 1ms;
+}
+.div__scroll--ImageThree {
+    view-timeline-name: --reveal;
+    animation-timeline: --reveal;
+    animation-range: entry 15% cover 60%;
+
+    animation-name: appearShow;
+    animation-fill-mode: both;    
+    animation-duration: 1ms;
+}
+@keyframes appearShow {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+        scale: 0%;
+    }
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+        scale: 100%;
+    }
+}
+
+/* Start Error404 */
+.body__div--error404 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 36%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+}
+.body--href--error404 {
+    text-decoration: none;
+    color:#222222;
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    background-color:lightgrey;
+    border-radius: 9px;
+    text-align: center;
+}
+/* End Error404 */
