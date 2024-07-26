@@ -10,12 +10,9 @@
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
-        <header class="body--header">
-            <p>Animación CSS a través del Scroll / CSS Animation on Scroll</p>
-        </header>
+        <%- include('./partials/header.ejs')%>
             
-        <main class="body--main"> 
-               
+        <main class="body--main">   
             <img class="img__scroll--one" src="/images/imagen1.jpg" alt="imagen1">
             <img class="img__scroll--one" src="/images/imagen7.jpg" alt="imagen7">
 
@@ -28,22 +25,8 @@
                 <img class="div__scroll--ImageThree" src="/images/imagen3.jpg" alt="imagen3">
                 <img class="div__scroll--ImageThree" src="/images/imagen4.jpg" alt="imagen4">
             </div>
-
-          
-
-           
         </main>
 
-        <footer class="body--footer">
-            <div>
-                <p class="body__footer--p">Desarrollador / Developer</p>
-                <div>
-                    <a class="body__footer--aLinkedin" href="https://www.linkedin.com/in/cesar-bertalot-/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn </a>
-                    <a class="body__footer--aGithub" href="https://github.com/CesarBerta" target="_blank">
-                        <i class="fa-brands fa-github"></i> GitHub </a>
-                </div>
-            </div>
-        </footer>
+        <%- include('./partials/footer.ejs')%>
     </body>
 </html>
