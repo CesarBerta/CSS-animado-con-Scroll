@@ -1,4 +1,4 @@
-#### Repositorio -> " Animación CSS a través del Scroll "
+## Repositorio -> " Animación CSS a través del Scroll "
 Se pueden crear animaciones CSS según la posición del scroll en la web, sin JavaScript!!! 
 
 ---
